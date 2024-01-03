@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,13 +25,72 @@ a:hover {
   color: #535bf2;
 }
 
+
+.wrapper .sidebar{
+  background:#f78225;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.wrapper .sidebar ul li a {
+  display: block;
+  padding: 13px 30px;
+  /*border-bottom: 1px solid rgb(241, 237, 237);*/
+  border-top: 1px solid rgb(241, 237, 237);
+  color: rgb(241, 237, 237);
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .sidebar ul li a .icon {
+  color: #dee4ec;
+  width: 30px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+  color: #f78225;
+  background: white;
+  border-right: 2px solid #f78225;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+  color: #f78225;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+  display: block;
+}
+
+
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
+
+.main-content {
+  margin-left: 300px; /* Largura da barra lateral */
+  padding: 20px;
+  flex: 1; /* Ocupa o restante do espaço disponível */
+}
+
 
 h1 {
   font-size: 3.2em;
