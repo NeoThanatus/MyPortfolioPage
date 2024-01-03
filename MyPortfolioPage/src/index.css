@@ -27,7 +27,7 @@ a:hover {
 
 
 .wrapper .sidebar{
-  background:#f78225;
+  background: linear-gradient(#f91503,#e57023);
   position: fixed;
   top: 0;
   left: 0;
@@ -62,20 +62,21 @@ ul {
 
 .wrapper .sidebar ul li a:hover,
 .wrapper .sidebar ul li a.active {
-  color: #f78225;
+  color: #e57023;
   background: white;
-  border-right: 2px solid #f78225;
+  border-right: 2px solid #e57023;
 }
 
 .wrapper .sidebar ul li a:hover .icon,
 .wrapper .sidebar ul li a.active .icon {
-  color: #f78225;
+  color: #e57023;
 }
 
 .wrapper .sidebar ul li a:hover:before,
 .wrapper .sidebar ul li a.active:before {
   display: block;
 }
+
 
 
 body {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from '@fortawesome/free-solid-svg-icons'; // Adicionando o ícone de link
 
 
 interface SidebarItemProps {
@@ -20,10 +21,11 @@ const SidebarItem: React.FC<SidebarItemProps> = ({ icon, text, link }) => (
 
 const Sidebar: React.FC = () => (
   <ul>
-    <SidebarItem icon={faInstagram} text="Instagram" link="https://www.instagram.com/seu_usuario_instagram/" />
-    <SidebarItem icon={faLinkedin} text="LinkedIn" link="https://www.linkedin.com/in/seu-usuario-linkedin/" />
-    <SidebarItem icon={faTwitter} text="Twitter" link="https://twitter.com/seu_usuario_twitter" />
-    <SidebarItem icon={faGithub} text="GitHub" link="https://github.com/seu_usuario_github" />
+    <SidebarItem icon={faInstagram} text="Instagram" link="https://www.instagram.com/neo.thanatus/" />
+    <SidebarItem icon={faLinkedin} text="LinkedIn" link="https://www.linkedin.com/in/ranulfo-reis/" />
+    <SidebarItem icon={faTwitter} text="Twitter" link="https://twitter.com/ONeoThanatus" />
+    <SidebarItem icon={faGithub} text="GitHub" link="https://github.com/NeoThanatus" />
+    <SidebarItem icon={faLink} text="Linktree" link="https://linktr.ee/NeoThanatus" />
   </ul>
 );
 

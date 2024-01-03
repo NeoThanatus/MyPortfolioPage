@@ -12,6 +12,7 @@ function App() {
 
       <div className="wrapper">
         <div className="sidebar">
+          
           <div>
             <Header />
             <h3>Ranulfo "NeoThanatus" Reis</h3>
@@ -22,6 +23,10 @@ function App() {
       </div>
 
       <div className="main-content">
+
+      
+
+
         <h2>Ranulfo "NeoThanatus" Reis</h2>
         <h2>Desenvolvedor de Jogos</h2>
 
